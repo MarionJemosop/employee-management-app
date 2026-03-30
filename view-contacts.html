@@ -1,1 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View All Contacts - Employee Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">EMS</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="new-contact.html">New Contact</a></li>
+            <li><a href="view-contacts.html" class="active">View All Contacts</a></li>
+        </ul>
+    </nav>
 
+    <div class="container">
+        <h1>All Employee Contacts</h1>
+        
+        <table class="contacts-table">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Department</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Ann Mutiga</td>
+                    <td>+2547...</td>
+                    <td>ann@company.com</td>
+                    <td>HR</td>
+                    <td class="actions">
+                        <button class="btn btn-info" onclick="viewDetails('Ann Mutiga')">Details</button>
+                        <button class="btn btn-warning" onclick="editContact('Ann Mutiga')">Edit</button>
+                        <button class="btn btn-danger" onclick="deleteContact('Ann Mutiga')">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Carren Nyaboke</td>
+                    <td>+2547...</td>
+                    <td>carren@company.com</td>
+                    <td>IT</td>
+                    <td class="actions">
+                        <button class="btn btn-info" onclick="viewDetails('Carren Nyaboke')">Details</button>
+                        <button class="btn btn-warning" onclick="editContact('Carren Nyaboke')">Edit</button>
+                        <button class="btn btn-danger" onclick="deleteContact('Carren Nyaboke')">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Cecilia Nyokabi Njoroge</td>
+                    <td>+2547...</td>
+                    <td>cecilia@company.com</td>
+                    <td>Finance</td>
+                    <td class="actions">
+                        <button class="btn btn-info" onclick="viewDetails('Cecilia Nyokabi Njoroge')">Details</button>
+                        <button class="btn btn-warning" onclick="editContact('Cecilia Nyokabi Njoroge')">Edit</button>
+                        <button class="btn btn-danger" onclick="deleteContact('Cecilia Nyokabi Njoroge')">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Charles Onyango</td>
+                    <td>+2547...</td>
+                    <td>charles@company.com</td>
+                    <td>Marketing</td>
+                    <td class="actions">
+                        <button class="btn btn-info" onclick="viewDetails('Charles Onyango')">Details</button>
+                        <button class="btn btn-warning" onclick="editContact('Charles Onyango')">Edit</button>
+                        <button class="btn btn-danger" onclick="deleteContact('Charles Onyango')">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Christine Mogeni</td>
+                    <td>+2547...</td>
+                    <td>christine@company.com</td>
+                    <td>Operations</td>
+                    <td class="actions">
+                        <button class="btn btn-info" onclick="viewDetails('Christine Mogeni')">Details</button>
+                        <button class="btn btn-warning" onclick="editContact('Christine Mogeni')">Edit</button>
+                        <button class="btn btn-danger" onclick="deleteContact('Christine Mogeni')">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
